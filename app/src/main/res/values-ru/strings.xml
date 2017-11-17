@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vision</string>
+    <string name="food_label">% еда</string>
+    <string name="frames_per_second">FPS:</string>
+    <string name="network_initialized">Классификатор инициализирован</string>
+    <string name="permission_denied">Доступ запрещен</string>
+    <string name="predicting">Это</string>
+
+    <string-array name="labels1">
+        <item>Не еда</item>
+        <item>Еда</item>
+    </string-array>
+
+    <string-array name="labels2">
+        <item>яблочный пирог</item>
+        <item>ребра на гриле</item>
+        <item>Пахлава</item>
+        <item>карпаччо из говядины</item>
+        <item>говяжий тартар</item>
+        <item>салат из свеклы</item>
+        <item>оладьи</item>
+        <item>пибимпапом</item>
+        <item>хлебный пудинг</item>
+        <item>завтрак буррито</item>
+        <item>Брускетта</item>
+        <item>салат Цезарь</item>
+        <item>канноли</item>
+        <item>салат капрезе</item>
+        <item>морковный пирог</item>
+        <item>севиче</item>
+        <item>сырная плита</item>
+        <item>чизкейк</item>
+        <item>курица-карри</item>
+        <item>куриная кесадилла</item>
+        <item>куриные крылышки</item>
+        <item>шоколадный торт</item>
+        <item>шоколадный мусс</item>
+        <item>чуррос</item>
+        <item>моллюск</item>
+        <item>Клубный сендвич</item>
+        <item>крабовые пирожные</item>
+        <item>Крем-брюле</item>
+        <item>croque madame</item>
+        <item>кубки пирожные</item>
+        <item>яйца</item>
+        <item>пончики</item>
+        <item>вареники</item>
+        <item>Edamame</item>
+        <item>яйца Бенедикт</item>
+        <item>отведать и улитки</item>
+        <item>фалафель</item>
+        <item>филе миньон</item>
+        <item>рыба и чипсы</item>
+        <item>фуа-гра</item>
+        <item>картофель-фри</item>
+        <item>Французский луковый суп</item>
+        <item>французский тост</item>
+        <item>жареные кальмары</item>
+        <item>жареный рис</item>
+        <item>Замороженный йогурт</item>
+        <item>чесночный хлеб</item>
+        <item>Ньокки</item>
+        <item>греческий салат</item>
+        <item>бутерброд с запеченным сыром</item>
+        <item>лосось на гриле</item>
+        <item>гуакамоле</item>
+        <item>Gyoza</item>
+        <item>гамбургер</item>
+        <item>горячий и кислый суп</item>
+        <item>хотдог</item>
+        <item>huevos rancheros</item>
+        <item>хумус</item>
+        <item>мороженое</item>
+        <item>лазанья</item>
+        <item>лобстерский биск</item>
+        <item>оливковый бутерброд</item>
+        <item>макароны с сыром</item>
+        <item>Macarons</item>
+        <item>суп мисо</item>
+        <item>моллюски</item>
+        <item>начос</item>
+        <item>омлет</item>
+        <item>кольца лука</item>
+        <item>устрицы</item>
+        <item>тайская подушка</item>
+        <item>паэлья</item>
+        <item>блины</item>
+        <item>Панна Котта</item>
+        <item>утка по-пекински</item>
+        <item>фо</item>
+        <item>пицца</item>
+        <item>свиная отбивная</item>
+        <item>путин</item>
+        <item>мясо на кости</item>
+        <item>виной сэндвич</item>
+        <item>рамен</item>
+        <item>равиоли</item>
+        <item>краснобархатный пирог</item>
+        <item>рисотто</item>
+        <item>самоса</item>
+        <item>сашими</item>
+        <item>гребешки</item>
+        <item>салат из морских водорослей</item>
+        <item>креветки и крупы</item>
+        <item>спагетти болоньезе</item>
+        <item>спагетти карбонара</item>
+        <item>рулеты</item>
+        <item>стейк</item>
+        <item>клубничный пирог</item>
+        <item>суши</item>
+        <item>тако</item>
+        <item>такояки</item>
+        <item>тирамису</item>
+        <item>тунец тартар</item>
+        <item>вафля</item>
+    </string-array>
+    <string name="open_label">Искать</string>
+    <string name="close_label">Закрыть</string>
+    <string name="download_summary">Скачать нейросеть на устройство</string>
+    <string name="download_title">Загрузить нейросеть</string>
+    <string name="error_file_exist">Файл уже загружен</string>
+    <string name="on_network_load_complete">Загрузка завершена</string>
+    <string name="on_network_load_summary">Скачивание</string>
+    <string name="on_network_load_title">Загрузка нейросети</string>
+    <string name="use_internet_summary">Использовать сервер для распознавания</string>
+    <string name="use_internet_title">Использовать интернет</string>
+</resources>

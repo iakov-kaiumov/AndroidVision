@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="use_internet"
+        android:defaultValue="true"
+        android:summary="@string/use_internet_summary"
+        android:title="@string/use_internet_title"
+        />
+
+    <Preference
+        android:key="download"
+        android:title="@string/download_title"
+        android:summary="@string/download_summary"
+        />
+</PreferenceScreen>

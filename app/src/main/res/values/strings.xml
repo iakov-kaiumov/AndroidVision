@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Vision</string>
+    <string name="food_label">% food</string>
+    <string name="frames_per_second">FPS: </string>
+    <string name="predicting">It is </string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="network_initialized">Classifier initialized</string>
+
+    <string-array name="labels1">
+        <item>Not food</item>
+        <item>Food</item>
+    </string-array>
+
+    <string-array name="labels2">
+        <item>apple pie</item>
+        <item>baby back ribs</item>
+        <item>baklava</item>
+        <item>beef carpaccio</item>
+        <item>beef tartare</item>
+        <item>beet salad</item>
+        <item>beignets</item>
+        <item>bibimbap</item>
+        <item>bread pudding</item>
+        <item>breakfast burrito</item>
+        <item>bruschetta</item>
+        <item>caesar salad</item>
+        <item>cannoli</item>
+        <item>caprese salad</item>
+        <item>carrot cake</item>
+        <item>ceviche</item>
+        <item>cheese plate</item>
+        <item>cheesecake</item>
+        <item>chicken curry</item>
+        <item>chicken quesadilla</item>
+        <item>chicken wings</item>
+        <item>chocolate cake</item>
+        <item>chocolate mousse</item>
+        <item>churros</item>
+        <item>clam chowder</item>
+        <item>club sandwich</item>
+        <item>crab cakes</item>
+        <item>creme brulee</item>
+        <item>croque madame</item>
+        <item>cup cakes</item>
+        <item>deviled eggs</item>
+        <item>donuts</item>
+        <item>dumplings</item>
+        <item>edamame</item>
+        <item>eggs benedict</item>
+        <item>escargots</item>
+        <item>falafel</item>
+        <item>filet mignon</item>
+        <item>fish and chips</item>
+        <item>foie gras</item>
+        <item>french fries</item>
+        <item>french onion soup</item>
+        <item>french toast</item>
+        <item>fried calamari</item>
+        <item>fried rice</item>
+        <item>frozen yogurt</item>
+        <item>garlic bread</item>
+        <item>gnocchi</item>
+        <item>greek salad</item>
+        <item>grilled cheese sandwich</item>
+        <item>grilled salmon</item>
+        <item>guacamole</item>
+        <item>gyoza</item>
+        <item>hamburger</item>
+        <item>hot and sour soup</item>
+        <item>hot dog</item>
+        <item>huevos rancheros</item>
+        <item>hummus</item>
+        <item>ice cream</item>
+        <item>lasagna</item>
+        <item>lobster bisque</item>
+        <item>lobster roll sandwich</item>
+        <item>macaroni and cheese</item>
+        <item>macarons</item>
+        <item>miso soup</item>
+        <item>mussels</item>
+        <item>nachos</item>
+        <item>omelette</item>
+        <item>onion rings</item>
+        <item>oysters</item>
+        <item>pad thai</item>
+        <item>paella</item>
+        <item>pancakes</item>
+        <item>panna cotta</item>
+        <item>peking duck</item>
+        <item>pho</item>
+        <item>pizza</item>
+        <item>pork chop</item>
+        <item>poutine</item>
+        <item>prime rib</item>
+        <item>pulled pork sandwich</item>
+        <item>ramen</item>
+        <item>ravioli</item>
+        <item>red velvet cake</item>
+        <item>risotto</item>
+        <item>samosa</item>
+        <item>sashimi</item>
+        <item>scallops</item>
+        <item>seaweed salad</item>
+        <item>shrimp and grits</item>
+        <item>spaghetti bolognese</item>
+        <item>spaghetti carbonara</item>
+        <item>spring rolls</item>
+        <item>steak</item>
+        <item>strawberry shortcake</item>
+        <item>sushi</item>
+        <item>tacos</item>
+        <item>takoyaki</item>
+        <item>tiramisu</item>
+        <item>tuna tartare</item>
+        <item>waffles</item>
+    </string-array>
+
+    <string name="use_internet_title">Use internet</string>
+    <string name="use_internet_summary">Enable server recognition</string>
+    <string name="download_title">Load network</string>
+    <string name="download_summary">Download network to recognise offline</string>
+    <string name="error_file_exist">File already exist</string>
+    <string name="on_network_load_title">Network Download</string>
+    <string name="on_network_load_summary">Download in progress</string>
+    <string name="on_network_load_complete">Download complete</string>
+    <string name="open_label">Search</string>
+    <string name="close_label">Close</string>
+
+</resources>
