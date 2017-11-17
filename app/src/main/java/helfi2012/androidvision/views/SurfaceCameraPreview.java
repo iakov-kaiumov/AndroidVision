@@ -41,6 +41,7 @@ public class SurfaceCameraPreview extends SurfaceView implements SurfaceHolder.C
     PreviewReadyCallback mPreviewReadyCallback = null;
 
     public enum LayoutMode {
+
         FitToParent, // Scale to the size that no side is larger than the parent
         NoBlank // Scale to the size that no side is smaller than the parent
     }
