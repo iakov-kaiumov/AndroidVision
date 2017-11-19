@@ -17,13 +17,13 @@ import android.widget.*
 import com.plattysoft.leonids.ParticleSystem
 import helfi2012.androidvision.R
 import helfi2012.androidvision.VisionApp
-import helfi2012.androidvision.recognision.CameraPreviewCallback
+import helfi2012.androidvision.recognition.NetworkListener
 import helfi2012.androidvision.utils.ImageUtils
 import helfi2012.androidvision.views.CameraPreview
 import java.util.*
 
 
-class CameraFragment : Fragment(), CameraPreviewCallback.NetworkListener {
+class CameraFragment : Fragment(), NetworkListener.NetworkListener {
 
     companion object {
         private val GOOGLE_URL = "https://www.google.ru/search?q="
@@ -37,7 +37,7 @@ class CameraFragment : Fragment(), CameraPreviewCallback.NetworkListener {
         }
     }
 
-    private var cameraPreviewCallBack: CameraPreviewCallback? = null
+    private var cameraPreviewCallBack: NetworkListener? = null
 
     private var currentWebBarState: WebBarState = WebBarState.INVISIBLE
 
@@ -126,7 +126,7 @@ class CameraFragment : Fragment(), CameraPreviewCallback.NetworkListener {
     }
 
     fun createCameraPreview() {
-        cameraPreviewCallBack = CameraPreviewCallback(activity.assets, resources,
+        cameraPreviewCallBack = NetworkListener(activity.assets, resources,
                 (activity.application as VisionApp).socketConnection!!, this)
         cameraPreview = CameraPreview(activity, cameraPreviewCallBack,
                 CameraPreview.CameraMode.Back, CameraPreview.LayoutMode.FitToParent)
@@ -224,8 +224,8 @@ class CameraFragment : Fragment(), CameraPreviewCallback.NetworkListener {
     override fun onNetworkRecognitionStart(name: String) {
         activity.runOnUiThread {
             when (name) {
-                CameraPreviewCallback.MULTI_CLASS_CONFIG.name -> networkProgressBar!!.visibility = ProgressBar.VISIBLE
-                CameraPreviewCallback.BINARY_CONFIG.name -> {
+                NetworkListener.MULTI_CLASS_CONFIG.name -> networkProgressBar!!.visibility = ProgressBar.VISIBLE
+                NetworkListener.BINARY_CONFIG.name -> {
                 }
                 else -> {
                 }
@@ -236,7 +236,7 @@ class CameraFragment : Fragment(), CameraPreviewCallback.NetworkListener {
     override fun onNetworkRecognitionStop(name: String, label: String, score: Float) {
         activity.runOnUiThread {
             when (name) {
-                CameraPreviewCallback.MULTI_CLASS_CONFIG.name -> {
+                NetworkListener.MULTI_CLASS_CONFIG.name -> {
                     networkProgressBar!!.visibility = ProgressBar.INVISIBLE
                     createFirework()
                     foodLabel = label
@@ -249,7 +249,7 @@ class CameraFragment : Fragment(), CameraPreviewCallback.NetworkListener {
                         startTimer()
                     }
                 }
-                CameraPreviewCallback.BINARY_CONFIG.name -> {
+                NetworkListener.BINARY_CONFIG.name -> {
                     scoreTextView!!.text = (score * 100).toInt().toString().plus(getString(R.string.food_label))
                     val intScore = (score * ImageUtils.COLOR_IN_RGB).toInt()
                     val color = Color.rgb(ImageUtils.COLOR_IN_RGB - intScore, intScore, 0)

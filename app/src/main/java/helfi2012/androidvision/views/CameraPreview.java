@@ -15,7 +15,7 @@ import android.widget.Toast;
 import java.io.IOException;
 import java.util.List;
 
-import helfi2012.androidvision.recognision.CameraPreviewCallback;
+import helfi2012.androidvision.recognition.NetworkListener;
 
 /**
  * This class assumes the parent layout is RelativeLayout.LayoutParams.
@@ -25,7 +25,7 @@ public class CameraPreview extends TextureView implements TextureView.SurfaceTex
     private static boolean DEBUGGING = true;
     private static final String TAG = "CameraPreviewSample";
     protected Activity mActivity;
-    protected CameraPreviewCallback mCameraPreviewCallback;
+    protected NetworkListener mNetworkListener;
     protected Camera mCamera;
     protected List<Camera.Size> mPreviewSizeList;
     protected List<Camera.Size> mPictureSizeList;
@@ -59,10 +59,10 @@ public class CameraPreview extends TextureView implements TextureView.SurfaceTex
      */
     protected boolean mSurfaceConfiguring = false;
 
-    public CameraPreview(Activity activity, CameraPreviewCallback cameraPreviewCallback, CameraMode cameraMode, LayoutMode layoutMode) {
+    public CameraPreview(Activity activity, NetworkListener networkListener, CameraMode cameraMode, LayoutMode layoutMode) {
         super(activity);
         mActivity = activity;
-        mCameraPreviewCallback = cameraPreviewCallback;
+        mNetworkListener = networkListener;
         mLayoutMode = layoutMode;
         this.setSurfaceTextureListener(this);
         if (cameraMode == CameraMode.Back) {
@@ -142,8 +142,8 @@ public class CameraPreview extends TextureView implements TextureView.SurfaceTex
         int dataBufferSize=(int)(previewSize.height*previewSize.width*
                 (ImageFormat.getBitsPerPixel(mCamera.getParameters().getPreviewFormat())/8.0));
         mCamera.addCallbackBuffer(new byte[dataBufferSize]);
-        mCamera.setPreviewCallback(mCameraPreviewCallback);
-        mCamera.setAutoFocusMoveCallback(mCameraPreviewCallback);
+        mCamera.setPreviewCallback(mNetworkListener);
+        mCamera.setAutoFocusMoveCallback(mNetworkListener);
 
         try {
             mCamera.startPreview();
